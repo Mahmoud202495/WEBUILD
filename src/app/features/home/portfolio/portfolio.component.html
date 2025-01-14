@@ -1,0 +1,54 @@
+<section class="portfolio">
+    <div class="container-fluid bg-light p-5">
+      <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+        <h1 class="display-5 fw-bold text-uppercase mb-4">
+          Some Of Our <span class="text-primary">Popular</span> Dream Projects
+        </h1>
+      </div>
+
+      <div class="row gx-5">
+        <div class="col-12 text-center">
+          <div class="d-inline-block bg-dark-radial text-center pt-4 px-lg-5 mb-5">
+            <ul class="list-inline mb-0">
+              <li 
+                class="btn btn-outline-primary bg-white p-2 mx-2 mb-4"
+                (click)="filterProjects('All')">
+                <img src="img/portfolio-1.jpg" alt="All Projects">
+                <div class="bg-transparent m-2">
+                  <h6 class="text-white text-uppercase m-0">All</h6>
+                </div>
+              </li>
+              <li 
+                class="btn btn-outline-primary bg-white p-2 mx-2 mb-4"
+                (click)="filterProjects('Construction')">
+                <img src="img/portfolio-2.jpg" alt="Construction">
+                <div class="bg-transparent m-2">
+                  <h6 class="text-white text-uppercase m-0">Construction</h6>
+                </div>
+              </li>
+              <li 
+                class="btn btn-outline-primary bg-white p-2 mx-2 mb-4"
+                (click)="filterProjects('Renovation')">
+                <img src="img/portfolio-3.jpg" alt="Renovation">
+                <div class="bg-transparent m-2">
+                  <h6 class="text-white text-uppercase m-0">Renovation</h6>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row g-5">
+        <div *ngFor="let project of filteredProjects" class="col-xl-4 col-lg-6 col-md-6">
+          <app-portfolio-card
+            [imageSrc]="project.imageSrc"
+            [projectName]="project.projectName"
+            [location]="project.location"
+            [link]="project.link">
+          </app-portfolio-card>
+        </div>
+      </div>
+    </div>
+  </section>
+  

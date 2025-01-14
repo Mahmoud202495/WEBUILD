@@ -1,0 +1,97 @@
+.btn-primary {
+    color: var(--white);
+    transition: .5s;
+    border-radius: 0;
+
+    &:hover {
+        color: var(--black);
+
+    }
+
+}
+.btn-outline-primary {
+    padding: 15px;
+    color: var(--black);
+    transition: .5s;
+    &:hover {
+        color: var(--white);
+        transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+        transform: scale(1.02);
+    }
+
+}
+.btn-danger {
+    border: none;
+    color: var(--white);
+    background-image: linear-gradient(to bottom, #FF946D, #FF7D68);
+
+    &:hover {
+        color: var(--white);
+
+        background-image: linear-gradient(to bottom, #FF7D68, #FF946D);
+    }
+}
+.btn-outline-dark {
+    &:hover {
+        background-color: var(--primary);
+        border-color: var(--primary);
+    }
+}
+.btn-outline-gray{
+    transition: .5s;
+    border-radius: 0;
+
+    &:hover {
+        color: var(--black);
+        border: 1px solid var(--black);
+
+    }
+}
+.btn {
+    position: relative;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: .5s;
+    border-radius: 0;
+
+}
+.btn::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    bottom: -1px;
+    left: 50%;
+    background:  var(--black);
+    transition: .5s;
+}
+.btn:hover::after,
+.btn.active::after {
+    width: 50%;
+    left: 25%;
+}
+a {
+    color: var(--body-coler);
+
+    &:hover {
+        color: var(--primary);
+
+    }
+}
+h1 {
+    color: var(--Secondary);
+}
+.carousel-inner {
+    overflow: visible;
+}
+.carousel-indicators [data-bs-target] {
+    display: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    z-index: 122;
+}
+.menu-nav {
+    border-radius: 0;
+}

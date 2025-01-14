@@ -1,0 +1,69 @@
+
+.lounge55 {
+    background: url(/img/gallery/background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+
+    .lounge55-bady {
+        width: 91%;
+        max-width: 680px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .logo {
+            img {
+                width: 100px;
+                height: auto;
+                border-radius: 50%;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+
+        .btn {
+            border-radius: 10px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+            width: 100%;  
+        }
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:rgba(0, 0, 0, 0.7); ; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            .popup-content {
+                background:var(--white);
+                padding: 20px;
+                border-radius: 10px;
+                text-align: center;
+                max-width: 400px;
+                width: 100%;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+                a {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

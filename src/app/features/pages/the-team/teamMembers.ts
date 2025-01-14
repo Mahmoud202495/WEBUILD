@@ -1,0 +1,98 @@
+export const teamMembers = [
+  {
+    name: 'John Doe',
+    position: 'Painter',
+    image: 'img/team-1.jpg',
+    socialLinks: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com',
+      youtube: 'https://youtube.com',
+    },
+  },
+  {
+    name: 'Jane Smith',
+    position: 'Interior Designer',
+    image: 'img/team-2.jpg',
+    socialLinks: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com',
+      youtube: 'https://youtube.com',
+    },
+  },
+  {
+    name: 'Mike Johnson',
+    position: 'Civil Engineer',
+    image: 'img/team-3.jpg',
+    socialLinks: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com',
+      youtube: 'https://youtube.com',
+    },
+  },
+  {
+    name: 'Emily Davis',
+    position: 'CEO & Founder',
+    image: 'img/team-4.jpg',
+    socialLinks: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com',
+      youtube: 'https://youtube.com',
+    },
+  },
+  {
+    name: 'John Doe',
+    position: 'Painter',
+    image: 'img/team-4.jpg',
+    socialLinks: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com',
+      youtube: 'https://youtube.com',
+    },
+  },
+  {
+    name: 'Jane Smith',
+    position: 'Interior Designer',
+    image: 'img/team-3.jpg',
+    socialLinks: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com',
+      youtube: 'https://youtube.com',
+    },
+  },
+  {
+    name: 'Mike Johnson',
+    position: 'Civil Engineer',
+    image: 'img/team-2.jpg',
+    socialLinks: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com',
+      youtube: 'https://youtube.com',
+    },
+  },
+  {
+    name: 'Mike Johnson',
+    position: 'Civil Engineer',
+    image: 'img/team-1.jpg',
+    socialLinks: {
+      facebook: 'https://facebook.com',
+      twitter: 'https://twitter.com',
+      linkedin: 'https://linkedin.com',
+      instagram: 'https://instagram.com',
+      youtube: 'https://youtube.com',
+    },
+  },
+];

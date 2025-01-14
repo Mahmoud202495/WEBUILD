@@ -1,0 +1,14 @@
+@import 'settings/variables'; // override
+@import 'settings/helpers';
+// Vendors     
+@import 'bootstrap/scss/bootstrap';
+$fa-font-path :'/fonts/fontawesome';
+@import 'vendors/fontawesome-free-6.7.1/fontawesome';
+@import 'vendors/fontawesome-free-6.7.1/regular';
+@import 'vendors/fontawesome-free-6.7.1/brands';
+@import 'vendors/fontawesome-free-6.7.1/v4-shims';
+@import 'vendors/fontawesome-free-6.7.1/solid';
+// modules 
+@import 'modules/bootsrtap-override';
+@import 'modules/common';
+@import 'modules/header';

@@ -1,0 +1,48 @@
+ .about-us {
+    .col-lg-7 {
+        animation: slideInLeft 1s ease-out forwards;
+    }
+    .col-lg-5 {
+        animation: slideInRight 1s ease-out forwards;
+   
+     .bg-dark-radial {
+         background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+         background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+         background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+         background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+         background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+         background-size: 3px 3px;
+     }
+
+     img {
+         position: absolute;
+         width: 100%;
+         height: 100%;
+         margin-left: -3rem;
+         object-fit: cover;
+     }
+    }
+
+
+ }
+ @keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        transform: translateX(100%); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}

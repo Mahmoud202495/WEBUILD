@@ -1,0 +1,44 @@
+
+.menu-nav {
+  border-radius: 8px;
+  border: 2px solid var(--black);
+  border-bottom: 1px solid transparent;
+
+  margin-bottom: 30px;
+  border-radius: 0;
+  .tabs-title {
+    padding: 10px 15px;
+    font-weight: bold;
+
+    .burger-btn {
+      display: none;
+
+      i {
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .tabs {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+
+    li {
+      .nav-link {
+        display: block;
+        padding: 10px 15px;
+        background-color:var(--primary);
+        border-bottom: 1px solid var(--black);
+        color: var(--white);
+        transition: background-color 0.3s;
+        &.active,
+        &:hover {
+          background-color: var(--gray-200);
+          color: var(--primary)
+        }
+      }
+    }
+  }
+}

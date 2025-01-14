@@ -1,0 +1,17 @@
+<section>
+    <div class="page-header text-center ">
+        <div class="container-fluid ">
+            <h2 class="display-3 text-white fw-bold text-uppercase">{{ title }}</h2>
+            <ul class="oll-item list-unstyled d-inline-flex">
+                <li class="item me-3" *ngFor="let item of breadcrumb; let last = last">
+                    <a [routerLink]="item.url" [class.text-white]="!item.active" [class.active]="item.active">
+                        {{ item.label }}
+                    </a>
+                    <span *ngIf="!last" class="text-white"> /</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+  

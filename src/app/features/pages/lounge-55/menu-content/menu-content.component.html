@@ -1,0 +1,22 @@
+<div class="menu">
+    <div *ngFor="let item of menuItems" class="menu-item">
+
+        <div class="menu-img">
+            <img [src]="item.image" [alt]="item.title">
+        </div>
+        <div class="menu-content d-flex align-items-center justify-content-between mb-2">
+            <div class="menu-text">
+                <h3 class="menu-title text-primary">{{ item.title }}</h3>
+                <p class="menu-desc">{{ item.description }}</p>
+                <span class="calories">{{ item.calories }} Calories</span>
+            </div>
+            <div class="price-btn d-flex align-items-center justify-content-center p-2 ">
+                <span class="price text-primary fw-bold me-2">{{ item.price }} SAR</span>
+                <button class="btn add-btn" (click)="addToCart(item)">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+        </div>
+        
+    </div>
+</div>

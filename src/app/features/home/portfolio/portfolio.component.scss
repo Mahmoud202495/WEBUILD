@@ -1,0 +1,31 @@
+.portfolio {
+    .bg-dark-radial {
+        background-image: -webkit-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+        background-image: -moz-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+        background-image: -ms-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+        background-image: -o-repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+        background-image: repeating-radial-gradient(center center, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) 1px, transparent 1px, transparent 100%);
+        background-size: 3px 3px;
+
+    }
+
+    img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .bg-transparent {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(4, 15, 40, .3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+
+    }
+}

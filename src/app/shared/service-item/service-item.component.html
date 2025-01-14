@@ -1,0 +1,15 @@
+<div class="service-item bg-white d-flex flex-column align-items-center text-center" [ngClass]="animationClass">
+    <img class="img-fluid" [src]="imageSrc">
+    <div class="service-icon">
+        <i [class]="iconClass + ' fa-3x text-primary'"></i>
+    </div>
+    <div class="px-4 pb-4 bg-white card-body">
+        <h4 class="text-uppercase mb-3 mt-2">{{ address }}</h4>
+        <p>{{ description }}</p>
+        <a class="btn text-primary" href="{{ link }}">
+            Read More <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
+
+

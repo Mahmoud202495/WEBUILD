@@ -1,0 +1,65 @@
+.header {
+
+    .navbar {
+        &.bg-light-radial {
+            background-image: -webkit-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+            background-image: -moz-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+            background-image: -ms-repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+            background-image: repeating-radial-gradient(center center, rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2) 1px, transparent 1px, transparent 100%);
+            background-size: 3px 3px;
+        }
+
+        .nav-item {
+            .nav-link {
+                position: relative;
+                color: var(--white);
+                transition: 0.5s;
+
+                &::before {
+                    position: absolute;
+                    content: "";
+                    width: 0;
+                    height: 4px;
+                    bottom: -1px;
+                    background: var(--primary);
+                    transition: 0.5s;
+                }
+            }
+
+            .nav-link:hover,
+            .nav-link:focus,
+            .nav-link:active {
+                color: var(--primary);
+            }
+
+            .btn:hover {
+                color: var(--black);
+
+            }
+
+            .nav-link:hover::before,
+            .nav-link:active::before {
+                width: calc(100% - 5px);
+                left: 1px;
+            }
+
+        }
+
+        .dropdown-menu {
+            .item:hover {
+                background-color: var(--danger-light);
+            }
+        }
+
+        .navbar-toggler {
+            border-color: var(--primary);
+        }
+
+        .navbar-toggler:focus {
+            border-color: var(--primary);
+            box-shadow: none;
+
+        }
+
+    }
+}

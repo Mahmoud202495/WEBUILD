@@ -1,0 +1,51 @@
+.service-item {
+    transition: .3s;
+    opacity: 0;
+    .service-icon {
+        margin-top: -50px;
+        width: 100px;
+        height: 100px;
+        background-color: var(--white);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: .3s;
+
+        i {
+            transition: .3s;
+        }
+    }
+    .card-body{
+       min-height: 255px  ;
+    }
+    &:hover .service-icon {
+        background-color: var(--black);
+    }
+
+    &:hover h4 {
+        color: var(--primary);
+    }
+
+    &:hover .service-icon i {
+        font-size: 60px;
+    }
+
+    &:hover {
+        box-shadow: var(--box-shadow);
+    }
+   &.animate-bottom {
+        animation: slideInBottom 0.6s ease-out forwards; 
+    }
+    
+}
+@keyframes slideInBottom {
+    0% {
+        transform: translateY(100%); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}

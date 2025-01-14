@@ -1,0 +1,31 @@
+.team-item {
+    img {
+      transition: 0.5s;
+    }
+
+    .team-social {
+      position: absolute;
+      width: 38px;
+      top: 50%;
+      left: -38px;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      background:var(--white);
+      transition: 0.5s;
+    }
+
+    .card-text {
+      background-color: var(--gray-100);
+      border: 5px solid var(--gray-200);
+      border-top: 0;
+    }
+  }
+
+  .team-item:hover img {
+    transform: scale(1.1);
+  }
+
+  .team-item:hover .team-social {
+    left: 0px;
+  }

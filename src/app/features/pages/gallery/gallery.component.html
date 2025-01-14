@@ -1,0 +1,23 @@
+
+<section>
+    <div class="wrapper">
+        <div class="images">
+            <div class="center">
+                <h1>AI</h1>
+                <h2>Gallery</h2>
+            </div>
+            <div class="column" *ngFor="let column of columns">
+                <!-- <div class="image" *ngFor="let img of column">
+                    <img *ngIf="!img.space" [src]="img?.src" [alt]="img.alt">
+                    <div class="space" *ngIf="img.space"></div>
+                    <figcaption>{{ img.caption || 'Default Caption' }}</figcaption>
+                </div> -->
+                <div class="image" *ngFor="let img of column">
+                    <app-image-roll *ngIf="img" [imgSrc]="img.src" [captionText]="img.caption"></app-image-roll> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  

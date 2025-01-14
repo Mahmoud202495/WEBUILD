@@ -1,0 +1,30 @@
+.header {
+    margin-top: 77px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    // background-color: #7a5d5d;
+
+    .share-button {
+        margin-left: 10px;
+
+        .language-button {
+            text-decoration: none;
+            font-size: 16px;
+            color: var(--white);
+            background-color:  var(--primary);
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: var(--primary);
+            }
+
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+}

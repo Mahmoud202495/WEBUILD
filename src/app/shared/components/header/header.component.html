@@ -1,0 +1,52 @@
+<header class="header ">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-info bg-light-radial p-0">
+        <div class="container-fluid pe-lg-0">
+            <a class="navbar-brand" [routerLink]="'.'">
+                <h1 class="m-0 display-4 text-uppercase fw-bold text-white ">
+                    <i class="fa-solid fa-building text-primary me-2"></i>WEBUILD
+                </h1>
+            </a>
+            <button class="navbar-toggler text-white" type="button" (click)="isMenuCollapsed = !isMenuCollapsed">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div [ngbCollapse]="isMenuCollapsed" class="collapse navbar-collapse ">
+                <ul class="navbar-nav ms-auto py-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link px-md-3 py-md-4 text-uppercase" [routerLink]="'home'"
+                            (click)="isMenuCollapsed = true">home</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px-md-3 py-md-4 text-uppercase" [routerLink]="'about'"
+                            (click)="isMenuCollapsed = true">about</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link px-md-3 py-md-4 text-uppercase" [routerLink]="'Service'"
+                            (click)="isMenuCollapsed = true">Service</a>
+                    </li>
+                    <li ngbDropdown class="nav-item ">
+                        <a class="nav-link px-md-3 py-md-4" tabindex="0" ngbDropdownToggle id="navbarDropdown2"
+                            role="button">pages</a>
+                        <div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" [routerLink]="'/the-team'" routerLinkActive="active" (click)="isMenuCollapsed = true">The Team</a>
+                            <a class="dropdown-item" [routerLink]="'/gallery'" routerLinkActive="active" (click)="isMenuCollapsed = true">Gallery</a>
+                            <a class="dropdown-item" [routerLink]="'/image-roll-gallery'" routerLinkActive="active" (click)="isMenuCollapsed = true">Images Roll Gallery</a>
+                            <a class="dropdown-item" [routerLink]="'/Lounge55'" routerLinkActive="active" (click)="isMenuCollapsed = true">Lounge55</a>
+                            <a class="dropdown-item" [routerLink]="'/menu'" routerLinkActive="active" (click)="isMenuCollapsed = true">menu</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link px-md-3 py-md-4 text-uppercase " [routerLink]="'Contact'"
+                            (click)="isMenuCollapsed = true">Contact</a>
+                    </li>
+                    <li class="nav-item bg-primary text-white px-5 ms-3 d-none d-lg-block">
+                        <a
+                          class="nav-link btn px-md-3 py-md-4 text-uppercase"[routerLink]="'/getAQuote'"
+                          (click)="isMenuCollapsed = true">Get A Quote <i class="fa-solid fa-arrow-right ms-2"></i>
+                        </a>
+                      </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

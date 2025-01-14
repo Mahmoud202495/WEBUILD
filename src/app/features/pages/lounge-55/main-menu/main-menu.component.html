@@ -1,0 +1,16 @@
+
+<div class="menu-nav ">
+  <ul class="tabs">
+    <div class="tabs-title">
+      Categories
+    </div>
+    <li *ngFor="let category of categories; let i = index">
+      <a
+        class="nav-link"
+        [class.active]="activeIndex === i"
+        (click)="selectCategory(i)">
+        {{ category }}
+      </a>
+    </li>
+  </ul>
+</div>

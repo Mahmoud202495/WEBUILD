@@ -1,0 +1,50 @@
+<app-header-lounge></app-header-lounge>
+<section class="lounge55">
+    <div class="container">
+        <div class="lounge55-bady">
+            <div class="logo">
+                <img src="/img/gallery/New-folder/logo.png" alt="74 Lounge Logo">
+                <h1>74 Lounge</h1>
+            </div>
+
+            <div class="buttons">
+                <a href="javascript:void(0)" class="btn btn-outline-primary mb-3">Main Menu</a>
+                <a href="javascript:void(0)" class="btn btn-outline-primary mb-3" (click)="openPopup()">Call Waiter</a>
+                <a href="javascript:void(0)" class="btn btn-outline-primary mb-3" (click)="openRateUsPopup()">Rate Us</a>
+            </div>
+
+            <div *ngIf="isPopupVisible" class="popup-overlay">
+                <div class="popup-content">
+                    <p>Do you want to call the waiter?</p>
+                    <a href="javascript:void(0)" class="btn btn-success" (click)="callWaiter()">Yes</a>
+                    <a href="javascript:void(0)" class="btn btn-danger" (click)="closePopup()">No</a>
+                </div>
+            </div>
+
+            <div *ngIf="isRateUsPopupVisible" class="popup-overlay">
+                <div class="popup-content">
+                    <h3>رأيك سر جودتنا</h3>
+                    <div>
+                        <p>Coffee quality <span>⭐⭐⭐⭐⭐</span></p>
+                    </div>
+                    <div>
+                        <p>Other beverage quality <span>⭐⭐⭐⭐⭐</span></p>
+                    </div>
+                    <div>
+                        <p>Quality of food or desserts<span>⭐⭐⭐⭐⭐</span></p>
+                    </div>
+                    <div>
+                        <p>Speed of service<span>⭐⭐⭐⭐⭐</span></p>
+                    </div>
+                    <textarea class="form-control " rows="5" placeholder="What did you like"></textarea>
+                    <a href="javascript:void(0)" class="btn btn-success mt-3" (click)="submitFeedback()">Send</a>
+                    <a href="javascript:void(0)"class="btn btn-danger mt-3" (click)="closeRateUsPopup()">Close</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
