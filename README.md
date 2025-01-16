@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WEBUILD
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# WEBUILD
+>>>>>>> 5c4e7f3de2567f97b69b20a45241453f8eb91e3c
